@@ -1,6 +1,6 @@
 <?php
-require_once 'utils/functions.php';
-require_once 'classes/User.php';
+require_once 'utils/funcoes.php';
+require_once 'classes/Usuario.php';
 
 start_session();
 
