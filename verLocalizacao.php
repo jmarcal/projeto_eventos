@@ -10,7 +10,7 @@ if (!isset($_GET['id'])) {
 }
 $id = $_GET['id'];
 
-$connection = Conexao::getInstance();
+$connection = Conexao::getInstancia();
 $gateway = new TabelaLocalizacao($connection);
 $eventGateway = new TabelaEvento($connection);
 

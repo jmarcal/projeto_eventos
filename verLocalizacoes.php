@@ -5,7 +5,7 @@ require_once 'classes/Localizacao.php';
 require_once 'classes/TabelaLocalizacao.php';
 require_once 'classes/Conexao.php';
 
-$connection = Conexao::getInstance();
+$connection = Conexao::getInstancia();
 $gateway = new TabelaLocalizacao($connection);
 
 $statement = $gateway->getLocations();

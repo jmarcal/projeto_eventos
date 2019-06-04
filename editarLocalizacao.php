@@ -15,7 +15,7 @@ $CapacidadeMaxima = $_POST['CapacidadeMaxima'];
 $location = new Localizacao($id, $Nome, $Endereco, $NomeOrganizador, $SobrenomeOrganizador,  $EmailOrganizador, $ContatoOrganizador
 , $CapacidadeMaxima);
 
-$connection = Conexao::getInstance();
+$connection = Conexao::getInstancia();
 
 $gateway = new TabelaLocalizacao($connection);
 

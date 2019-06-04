@@ -19,7 +19,7 @@ if (empty($errors)) {
 
     $event = new Evento(-1, $title, $description, $sDate, $eDate, $cost, $locID);
 
-    $connection = Conexao::getInstance();
+    $connection = Conexao::getInstancia();
 
     $gateway = new TabelaEvento($connection);
 

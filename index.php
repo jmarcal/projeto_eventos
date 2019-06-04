@@ -9,6 +9,11 @@
     <!--css links. file found in utils folder-->
     <?php require 'utils/scripts.php'; ?>
     <!--js links. file found in utils folder-->
+    <style>
+    img {
+        margin-bottom: 20px;
+    }
+    </style>
 </head>
 
 <body>
@@ -38,7 +43,7 @@
                             <div class="row">
                                 <div class="col-md-5">
                                     <!--image holder with 6 grid columns-->
-                                    <img src="images/wedding2.jpg" class="img-responsive">
+                                    <img src="images/congresso.jpg" class="img-responsive img-thumbnail">
                                 </div>
                             </div>
                             <div class="row">
@@ -75,7 +80,7 @@
                             <div class="row">
                                 <div class="col-md-5">
                                     <!--image holder with 6 grid columns-->
-                                    <img src="images/birthday2.jpg" class="img-responsive">
+                                    <img src="images/encontro.jpg" class="img-responsive img-thumbnail">
                                 </div>
                             </div>
                             <div class="row">
@@ -127,7 +132,7 @@
                             <div class="row">
                                 <div class="col-md-5">
                                     <!--image holder with 6 grid columns-->
-                                    <img src="images/fashion2.jpg" class="img-responsive">
+                                    <img src="images/seminario.jpg" class="img-responsive img-thumbnail">
                                 </div>
                             </div>
                             <div class="row">
@@ -165,7 +170,7 @@
                             <div class="row">
                                 <div class="col-md-5">
                                     <!--image holder with 6 grid columns-->
-                                    <img src="images/meeting2.jpg" class="img-responsive">
+                                    <img src="images/mesa-redonda.jpg" class="img-responsive img-thumbnail">
                                 </div>
                             </div>
                             <div class="row">
@@ -218,7 +223,7 @@
                             <div class="row">
                                 <div class="col-md-5">
                                     <!--image holder with 6 grid columns-->
-                                    <img src="images/fashion2.jpg" class="img-responsive">
+                                    <img src="images/simposio.jpg" class="img-responsive img-thumbnail">
                                 </div>
                             </div>
                             <div class="row">
@@ -257,7 +262,7 @@
                             <div class="row">
                                 <div class="col-md-5">
                                     <!--image holder with 6 grid columns-->
-                                    <img src="images/meeting2.jpg" class="img-responsive">
+                                    <img src="images/painel.jpg" class="img-responsive img-thumbnail">
                                 </div>
                             </div>
                             <div class="row">
@@ -305,7 +310,7 @@
                             <div class="row">
                                 <div class="col-md-5">
                                     <!--image holder with 6 grid columns-->
-                                    <img src="images/fashion2.jpg" class="img-responsive">
+                                    <img src="images/forum.jpg" class="img-responsive img-thumbnail">
                                 </div>
                             </div>
                             <div class="row">
@@ -346,7 +351,7 @@
                             <div class="row">
                                 <div class="col-md-5">
                                     <!--image holder with 6 grid columns-->
-                                    <img src="images/meeting2.jpg" class="img-responsive">
+                                    <img src="images/conferencia.jpg" class="img-responsive img-thumbnail">
                                 </div>
                             </div>
                             <div class="row">
@@ -403,7 +408,7 @@
                             <div class="row">
                                 <div class="col-md-5">
                                     <!--image holder with 6 grid columns-->
-                                    <img src="images/fashion2.jpg" class="img-responsive">
+                                    <img src="images/jornada.jpg" class="img-responsive img-thumbnail">
                                 </div>
                             </div>
                             <div class="row">
@@ -443,7 +448,7 @@
                             <div class="row">
                                 <div class="col-md-5">
                                     <!--image holder with 6 grid columns-->
-                                    <img src="images/meeting2.jpg" class="img-responsive">
+                                    <img src="images/cursos.jpg" class="img-responsive img-thumbnail">
                                 </div>
                             </div>
                             <div class="row">
@@ -500,7 +505,7 @@
                             <div class="row">
                                 <div class="col-md-5">
                                     <!--image holder with 6 grid columns-->
-                                    <img src="images/fashion2.jpg" class="img-responsive">
+                                    <img src="images/coloquio.jpg" class="img-responsive img-thumbnail">
                                 </div>
                             </div>
                             <div class="row">
@@ -538,7 +543,7 @@
                             <div class="row">
                                 <div class="col-md-5">
                                     <!--image holder with 6 grid columns-->
-                                    <img src="images/meeting2.jpg" class="img-responsive">
+                                    <img src="images/workshop.jpg" class="img-responsive img-thumbnail">
                                 </div>
                             </div>
                             <div class="row">

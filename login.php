@@ -51,7 +51,7 @@ try {
             $errors['username'] = "Username is not registered";
         }
         else {
-            if ($password !== $user->getPassword()) {
+            if ($password !== $user->getSenha()) {
                 $errors['password'] = "Password is incorrect";
             }
         }

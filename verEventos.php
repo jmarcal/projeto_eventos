@@ -8,7 +8,7 @@ require_once 'classes/TabelaLocalizacao.php';
 require_once 'classes/Conexao.php';
 
 
-$connection = Conexao::getInstance();
+$connection = Conexao::getInstancia();
 $gateway = new TabelaEvento($connection);
 
 $statement = $gateway->getEventos();
