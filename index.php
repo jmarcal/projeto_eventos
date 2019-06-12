@@ -6,21 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema Gerenciador de Eventos</title>
     <?php require 'utils/styles.php'; ?>
-    <!--css links. file found in utils folder-->
+    <!--links css. arquivo encontrado na pasta utils-->
     <?php require 'utils/scripts.php'; ?>
-    <!--js links. file found in utils folder-->
+    <!--links js. arquivo encontrado na pasta utils-->
+    <style>
+    img {
+        margin-bottom: 20px;
+    }
+    </style>
 </head>
 
 <body>
     <?php require 'utils/cabecalho.php'; ?>
-    <!--header content. file found in utils folder-->
+    <!--conteudo cabecalho. arquivo encontrado na pasta utils-->
     <div class="content">
-        <!--body content holder-->
+        <!--conteudo body-->
         <div class="container">
             <div class="col-md-12">
-                <!--body content title holder with 12 grid columns-->
                 <h1>O que Organizamos?</h1>
-                <!--body content title-->
+                <!--conteudo body titulo-->
             </div>
         </div>
 
@@ -37,15 +41,13 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-5">
-                                    <!--image holder with 6 grid columns-->
-                                    <img src="images/wedding2.jpg" class="img-responsive">
+                                    <img src="images/congresso.jpg" class="img-responsive img-thumbnail">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="subcontent col-md-5">
-                                    <!--Text holder with 6 column grid-->
                                     <h1>Congresso</h1>
-                                    <!--title-->
+                                    <!--titulo-->
                                     <p>
                                         “O congresso é a reunião onde especialistas deliberam sobre questões de
                                         interesse comum ou apresentam estudos, novas descobertas, etc.”
@@ -55,17 +57,17 @@
                                         debater e extrair conclusões acerca de uma temática central.
                                     </p>
                                     <hr class="customline">
-                                    <!--css modified horizontal line-->
+                                    <!--linha horizontal css modificada-->
                                     <button type="button" class="btn btn-default btn-lg">
-                                        <!--view event button (no function implemented)-->
+                                        <!--botao ver evento(sem funcao implementada)-->
                                         Ver eventos <span class="glyphicon glyphicon-arrow-right"
                                             aria-hidden="true"></span>
-                                        <!--arrow right glyphicon-->
+
                                     </button>
                                 </div>
-                                <!--subcontent div-->
+
                             </div>
-                            <!--container div-->
+
                         </div>
                     </section>
                 </div>
@@ -74,15 +76,15 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-5">
-                                    <!--image holder with 6 grid columns-->
-                                    <img src="images/birthday2.jpg" class="img-responsive">
+
+                                    <img src="images/encontro.jpg" class="img-responsive img-thumbnail">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="subcontent col-md-5">
-                                    <!--Text holder with 6 column grid-->
+
                                     <h1>Encontro</h1>
-                                    <!--title-->
+                                    <!--titulo-->
                                     <p>
                                         “É a reunião de pessoas ou de especialistas para discutir determinado tema”
                                     </p>
@@ -94,17 +96,17 @@
                                         atuação e destacar o que precisa ser melhorado, propondo soluções.
                                     </p>
                                     <hr class="customline">
-                                    <!--css modified horizontal line-->
+                                    <!--linha horizontal css modificada-->
                                     <button type="button" class="btn btn-default btn-lg">
-                                        <!--view event button (no function implemented)-->
+                                        <!--botao ver evento(sem funcao implementada)-->
                                         Ver eventos <span class="glyphicon glyphicon-arrow-right"
                                             aria-hidden="true"></span>
-                                        <!--arrow right glyphicon-->
+
                                     </button>
                                 </div>
-                                <!--subcontent div-->
+
                             </div>
-                            <!--container div-->
+
                         </div>
                     </section>
 
@@ -126,15 +128,15 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-5">
-                                    <!--image holder with 6 grid columns-->
-                                    <img src="images/fashion2.jpg" class="img-responsive">
+
+                                    <img src="images/seminario.jpg" class="img-responsive img-thumbnail">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="subcontent col-md-5">
-                                    <!--Text holder with 6 column grid-->
+
                                     <h1>Seminário</h1>
-                                    <!--title-->
+                                    <!--titulo-->
                                     <p>
                                         O seminário é um evento oral, e que precisa da presença de um mediador (orador)
                                         para existir.
@@ -145,17 +147,14 @@
                                         desenvolvidas por esses estudantes.
                                     </p>
                                     <hr class="customline">
-                                    <!--css modified horizontal line-->
+                                    <!--linha horizontal css modificada-->
                                     <button type="button" class="btn btn-default btn-lg">
-                                        <!--view event button (no function implemented)-->
+                                        <!--botao ver evento(sem funcao implementada)-->
                                         Ver eventos <span class="glyphicon glyphicon-arrow-right"
                                             aria-hidden="true"></span>
-                                        <!--arrow right glyphicon-->
                                     </button>
                                 </div>
-                                <!--subcontent div-->
                             </div>
-                            <!--container div-->
                         </div>
                     </section>
                 </div>
@@ -164,15 +163,13 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-5">
-                                    <!--image holder with 6 grid columns-->
-                                    <img src="images/meeting2.jpg" class="img-responsive">
+                                    <img src="images/mesa-redonda.jpg" class="img-responsive img-thumbnail">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="subcontent col-md-5">
-                                    <!--Text holder with 6 column grid-->
                                     <h1>Mesa-redonda</h1>
-                                    <!--title-->
+                                    <!--titulo-->
                                     <p>
                                         As mesas-redondas costumam integrar a programação de eventos maiores, como os
                                         congressos.
@@ -185,17 +182,17 @@
                                         assim, seja garantida a ordem do evento.
                                     </p>
                                     <hr class="customline">
-                                    <!--css modified horizontal line-->
+                                    <!--linha horizontal css modificada-->
                                     <button type="button" class="btn btn-default btn-lg">
-                                        <!--view event button (no function implemented)-->
+                                        <!--botao ver evento(sem funcao implementada)-->
                                         Ver eventos <span class="glyphicon glyphicon-arrow-right"
                                             aria-hidden="true"></span>
-                                        <!--arrow right glyphicon-->
+
                                     </button>
                                 </div>
-                                <!--subcontent div-->
+
                             </div>
-                            <!--container div-->
+
                         </div>
                     </section>
 
@@ -217,15 +214,15 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-5">
-                                    <!--image holder with 6 grid columns-->
-                                    <img src="images/fashion2.jpg" class="img-responsive">
+
+                                    <img src="images/simposio.jpg" class="img-responsive img-thumbnail">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="subcontent col-md-5">
-                                    <!--Text holder with 6 column grid-->
+
                                     <h1>Simpósio</h1>
-                                    <!--title-->
+                                    <!--titulo-->
                                     <p>
                                         De acordo com a Capes, o simpósio consiste em uma “reunião de iniciativa de
                                         determinada comunidade científica em torno de um assunto específico com vistas a
@@ -237,17 +234,17 @@
                                         um determinado tema a fim de chegar a maiores conclusões sobre ele.
                                     </p>
                                     <hr class="customline">
-                                    <!--css modified horizontal line-->
+                                    <!--linha horizontal css modificada-->
                                     <button type="button" class="btn btn-default btn-lg">
-                                        <!--view event button (no function implemented)-->
+                                        <!--botao ver evento(sem funcao implementada)-->
                                         Ver eventos <span class="glyphicon glyphicon-arrow-right"
                                             aria-hidden="true"></span>
-                                        <!--arrow right glyphicon-->
+
                                     </button>
                                 </div>
-                                <!--subcontent div-->
+
                             </div>
-                            <!--container div-->
+
                         </div>
                     </section>
                 </div>
@@ -256,15 +253,15 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-5">
-                                    <!--image holder with 6 grid columns-->
-                                    <img src="images/meeting2.jpg" class="img-responsive">
+
+                                    <img src="images/painel.jpg" class="img-responsive img-thumbnail">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="subcontent col-md-5">
-                                    <!--Text holder with 6 column grid-->
+
                                     <h1>Painel</h1>
-                                    <!--title-->
+                                    <!--titulo-->
                                     <p>
                                         O painel é um tipo de evento que deriva da mesa-redonda.
 
@@ -272,17 +269,17 @@
                                         renome, debatem o assunto e o público participa apenas como espectador.
                                     </p>
                                     <hr class="customline">
-                                    <!--css modified horizontal line-->
+                                    <!--linha horizontal css modificada-->
                                     <button type="button" class="btn btn-default btn-lg">
-                                        <!--view event button (no function implemented)-->
+                                        <!--botao ver evento(sem funcao implementada)-->
                                         Ver eventos <span class="glyphicon glyphicon-arrow-right"
                                             aria-hidden="true"></span>
-                                        <!--arrow right glyphicon-->
+
                                     </button>
                                 </div>
-                                <!--subcontent div-->
+
                             </div>
-                            <!--container div-->
+
                         </div>
                     </section>
 
@@ -304,15 +301,15 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-5">
-                                    <!--image holder with 6 grid columns-->
-                                    <img src="images/fashion2.jpg" class="img-responsive">
+
+                                    <img src="images/forum.jpg" class="img-responsive img-thumbnail">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="subcontent col-md-5">
-                                    <!--Text holder with 6 column grid-->
+
                                     <h1>Fórum</h1>
-                                    <!--title-->
+                                    <!--titulo-->
                                     <p>
                                         A principal característica do fórum é a participação da plateia.
 
@@ -326,17 +323,17 @@
                                         motivada para a discussão.
                                     </p>
                                     <hr class="customline">
-                                    <!--css modified horizontal line-->
+                                    <!--linha horizontal css modificada-->
                                     <button type="button" class="btn btn-default btn-lg">
-                                        <!--view event button (no function implemented)-->
+                                        <!--botao ver evento(sem funcao implementada)-->
                                         Ver eventos <span class="glyphicon glyphicon-arrow-right"
                                             aria-hidden="true"></span>
-                                        <!--arrow right glyphicon-->
+
                                     </button>
                                 </div>
-                                <!--subcontent div-->
+
                             </div>
-                            <!--container div-->
+
                         </div>
                     </section>
                 </div>
@@ -345,15 +342,15 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-5">
-                                    <!--image holder with 6 grid columns-->
-                                    <img src="images/meeting2.jpg" class="img-responsive">
+
+                                    <img src="images/conferencia.jpg" class="img-responsive img-thumbnail">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="subcontent col-md-5">
-                                    <!--Text holder with 6 column grid-->
+
                                     <h1>Conferência</h1>
-                                    <!--title-->
+                                    <!--titulo-->
                                     <p>
                                         É um evento mais formal, que reúne especialistas para debater um tema
                                         específico.
@@ -370,17 +367,17 @@
                                         vez, tem que optar pelas mais relevantes.
                                     </p>
                                     <hr class="customline">
-                                    <!--css modified horizontal line-->
+                                    <!--linha horizontal css modificada-->
                                     <button type="button" class="btn btn-default btn-lg">
-                                        <!--view event button (no function implemented)-->
+                                        <!--botao ver evento(sem funcao implementada)-->
                                         Ver eventos <span class="glyphicon glyphicon-arrow-right"
                                             aria-hidden="true"></span>
-                                        <!--arrow right glyphicon-->
+
                                     </button>
                                 </div>
-                                <!--subcontent div-->
+
                             </div>
-                            <!--container div-->
+
                         </div>
                     </section>
 
@@ -402,15 +399,15 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-5">
-                                    <!--image holder with 6 grid columns-->
-                                    <img src="images/fashion2.jpg" class="img-responsive">
+
+                                    <img src="images/jornada.jpg" class="img-responsive img-thumbnail">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="subcontent col-md-5">
-                                    <!--Text holder with 6 column grid-->
+
                                     <h1>Jornada</h1>
-                                    <!--title-->
+                                    <!--titulo-->
                                     <p>
                                         São encontros de grupos profissionais mais próximos, de âmbito regional, que
                                         discutem, periodicamente, assuntos de interesse do grupo.
@@ -423,17 +420,17 @@
                                         evento.
                                     </p>
                                     <hr class="customline">
-                                    <!--css modified horizontal line-->
+                                    <!--linha horizontal css modificada-->
                                     <button type="button" class="btn btn-default btn-lg">
-                                        <!--view event button (no function implemented)-->
+                                        <!--botao ver evento(sem funcao implementada)-->
                                         Ver eventos <span class="glyphicon glyphicon-arrow-right"
                                             aria-hidden="true"></span>
-                                        <!--arrow right glyphicon-->
+
                                     </button>
                                 </div>
-                                <!--subcontent div-->
+
                             </div>
-                            <!--container div-->
+
                         </div>
                     </section>
                 </div>
@@ -442,15 +439,15 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-5">
-                                    <!--image holder with 6 grid columns-->
-                                    <img src="images/meeting2.jpg" class="img-responsive">
+
+                                    <img src="images/cursos.jpg" class="img-responsive img-thumbnail">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="subcontent col-md-5">
-                                    <!--Text holder with 6 column grid-->
+
                                     <h1>Cursos</h1>
-                                    <!--title-->
+                                    <!--titulo-->
                                     <p>
                                         Consiste no detalhamento de determinado assunto ou conjunto de temas a fim de
                                         “treinar” ou “ensinar a fazer”.
@@ -467,17 +464,17 @@
                                         conhecimento de quem já domina o assunto.
                                     </p>
                                     <hr class="customline">
-                                    <!--css modified horizontal line-->
+                                    <!--linha horizontal css modificada-->
                                     <button type="button" class="btn btn-default btn-lg">
-                                        <!--view event button (no function implemented)-->
+                                        <!--botao ver evento(sem funcao implementada)-->
                                         Ver eventos <span class="glyphicon glyphicon-arrow-right"
                                             aria-hidden="true"></span>
-                                        <!--arrow right glyphicon-->
+
                                     </button>
                                 </div>
-                                <!--subcontent div-->
+
                             </div>
-                            <!--container div-->
+
                         </div>
                     </section>
 
@@ -499,15 +496,15 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-5">
-                                    <!--image holder with 6 grid columns-->
-                                    <img src="images/fashion2.jpg" class="img-responsive">
+
+                                    <img src="images/coloquio.jpg" class="img-responsive img-thumbnail">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="subcontent col-md-5">
-                                    <!--Text holder with 6 column grid-->
+
                                     <h1>Colóquio</h1>
-                                    <!--title-->
+                                    <!--titulo-->
                                     <p>
                                         Este tipo evento acadêmico promove um espaço de conversação entre várias pessoas
                                         para se debater um assunto específico, selecionado e delimitado.
@@ -518,17 +515,17 @@
                                         debatem ao mesmo tempo.
                                     </p>
                                     <hr class="customline">
-                                    <!--css modified horizontal line-->
+                                    <!--linha horizontal css modificada-->
                                     <button type="button" class="btn btn-default btn-lg">
-                                        <!--view event button (no function implemented)-->
+                                        <!--botao ver evento(sem funcao implementada)-->
                                         Ver eventos <span class="glyphicon glyphicon-arrow-right"
                                             aria-hidden="true"></span>
-                                        <!--arrow right glyphicon-->
+
                                     </button>
                                 </div>
-                                <!--subcontent div-->
+
                             </div>
-                            <!--container div-->
+
                         </div>
                     </section>
                 </div>
@@ -537,15 +534,15 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-5">
-                                    <!--image holder with 6 grid columns-->
-                                    <img src="images/meeting2.jpg" class="img-responsive">
+
+                                    <img src="images/workshop.jpg" class="img-responsive img-thumbnail">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="subcontent col-md-5">
-                                    <!--Text holder with 6 column grid-->
+
                                     <h1>Workshop</h1>
-                                    <!--title-->
+                                    <!--titulo-->
                                     <p>
                                         Um workshop é uma aula que trata de assuntos específicos. Por isso, conta com
                                         especialistas para guiar o tema e as atividades.
@@ -558,17 +555,17 @@
                                         em prática tudo que aprenderam.
                                     </p>
                                     <hr class="customline">
-                                    <!--css modified horizontal line-->
+                                    <!--linha horizontal css modificada-->
                                     <button type="button" class="btn btn-default btn-lg">
-                                        <!--view event button (no function implemented)-->
+                                        <!--botao ver evento(sem funcao implementada)-->
                                         Ver eventos <span class="glyphicon glyphicon-arrow-right"
                                             aria-hidden="true"></span>
-                                        <!--arrow right glyphicon-->
+
                                     </button>
                                 </div>
-                                <!--subcontent div-->
+
                             </div>
-                            <!--container div-->
+
                         </div>
                     </section>
 
@@ -586,7 +583,7 @@
 
 
         <?php require 'utils/rodape.php'; ?>
-        <!--footer content. file found in utils folder-->
+        <!--footer content. arquivo encontrado na pasta utils-->
 </body>
 
 </html>

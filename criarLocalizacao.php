@@ -20,7 +20,7 @@ if (empty($errors)) {
 
     $location = new Localizacao(-1, $locationName, $locationAddress, $managerFName, $managerLName, $managerEmail, $managerNumber, $maxCap);
 
-    $connection = Conexao::getInstance();
+    $connection = Conexao::getInstancia();
 
     $gateway = new TabelaLocalizacao($connection);
 

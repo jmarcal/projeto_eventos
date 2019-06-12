@@ -5,7 +5,7 @@ require_once 'classes/Localizacao.php';
 require_once 'classes/TabelaLocalizacao.php';
 require_once 'classes/Conexao.php';
 
-$connection = Conexao::getInstance();
+$connection = Conexao::getInstancia();
 $gateway = new TabelaLocalizacao($connection);
 
 $statement = $gateway->getLocations();
@@ -40,8 +40,8 @@ $user = $_SESSION['user'];
             <table class="table table-hover">
                 <thead>
                     <tr>
-                        <!--table label-->
-                        <!--this will only show the detail of a location with specific ID chosen by the user-->
+                        <!--label tabela-->
+                        <!--somente mostrara localizacao detalhada com ID especifico escolhido pelo usuario-->
                         <th>ID de Localização</th>
                         <th>Nome</th>
                         <th>Endereço</th>
@@ -54,7 +54,7 @@ $user = $_SESSION['user'];
                     </tr>
                 </thead>
                 <tbody>
-                    <!--table contents-->
+                    <!--conteudo tabela-->
                     <?php
                         $row = $statement->fetch(PDO::FETCH_ASSOC);
                         while ($row) {

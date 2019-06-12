@@ -10,17 +10,18 @@ $errors = array();
 validarEvento(INPUT_POST, $formdata, $errors);
 
 if (empty($errors)) {
-    $title = $formdata['Title'];
-    $description = $formdata['Description'];    
-    $sDate = $formdata['StartDate'];
-    $eDate = $formdata['EndDate'];
-    $cost = $formdata['Cost'];
-    $locID = $formdata['LocID'];
+    $titulo = $formdata['Titulo'];
+    $descricao = $formdata['Descricao'];    
+    $tipoEvento = $formdata['TipoEvento'];    
+    $dataInicio = $formdata['DataInicio'];
+    $dataFim = $formdata['DataFim'];
+    $custo = $formdata['Custo'];
+    $IDloc = $formdata['IDloc'];
 
-    $event = new Evento(-1, $title, $description, $sDate, $eDate, $cost, $locID);
+    $event = new Evento(-1, $titulo, $descricao, $tipoEvento, $dataInicio, $dataFim, $custo, $IDloc);
 
-    $connection = Conexao::getInstance();
-
+    $connection = Conexao::getInstancia();
+ 
     $gateway = new TabelaEvento($connection);
 
     $id = $gateway->insert($event);

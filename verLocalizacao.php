@@ -10,7 +10,7 @@ if (!isset($_GET['id'])) {
 }
 $id = $_GET['id'];
 
-$connection = Conexao::getInstance();
+$connection = Conexao::getInstancia();
 $gateway = new TabelaLocalizacao($connection);
 $eventGateway = new TabelaEvento($connection);
 
@@ -43,8 +43,8 @@ if (!$row) {
                 ?>
             <table class="table table-hover">
                 <thead>
-                    <!--table label-->
-                    <!--this will only show the detail of a location with specific ID chosen by the user-->
+                    <!--label tabela-->
+                    <!--somente detalhara a localizacao com ID especifico escolhido pelo usuario-->
                     <tr>
                         <th>ID de Localização</th>
                         <th>Nome Local</th>
@@ -58,7 +58,7 @@ if (!$row) {
                     </tr>
                 </thead>
                 <tbody>
-                    <!--table contents-->
+                    <!--conteudos tabela-->
                     <?php
                         echo '<tr>';
                         echo '<td>' . $row['IDlocalizacao'] . '</td>';

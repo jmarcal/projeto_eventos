@@ -5,16 +5,16 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title></title>
     <?php require 'utils/styles.php'; ?>
-    <!--css links. file found in utils folder-->
+    <!--inks css. arquivo encontrado na pasta utils-->
     <?php require 'utils/scripts.php'; ?>
-    <!--js links. file found in utils folder-->
+    <!--links js. arquivo encontrado na pasta utils-->
 </head>
 
 <body>
     <?php require 'utils/cabecalho.php'; ?>
-    <!--header content. file found in utils folder-->
+    <!--conteudo cabecalho. arquivo encontrado na pasta utils-->
     <div class="content">
-        <!--body content holder-->
+        <!--conteudo body-->
         <div class="container">
             <div class="col-md-6 col-md-offset-3">
                 <form action="registro.php" class="form-group" method="POST">

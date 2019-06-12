@@ -8,7 +8,7 @@ if (!isset($_GET['id'])) {
 }
 $id = $_GET['id'];
 
-$connection = Conexao::getInstance();
+$connection = Conexao::getInstancia();
 $gateway = new TabelaLocalizacao($connection);
 
 $statement = $gateway->getLocationsById($id);
@@ -25,18 +25,18 @@ if (!$row) {
     <meta charset="UTF-8">
     <title>Edit Location</title>
     <?php require 'utils/styles.php'; ?>
-    <!--css links. file found in utils folder-->
+    <!--links css. arquivo encontrado na pasta utils-->
     <?php require 'utils/scripts.php'; ?>
-    <!--js links. file found in utils folder-->
+    <!--links js. arquivo encontrado na pasta utils-->
 </head>
 
 <body>
     <?php require 'utils/cabecalho.php'; ?>
-    <!--header content. file found in utils folder-->
+    <!--conteudo cabecalho. arquivo encontrado na pasta utils-->
     <div class="content">
         <div class="container">
             <h1>Edit Location Form</h1>
-            <!--form title-->
+            <!--titulo formulario-->
             <?php 
                 if (isset($errorMessage)) {
                     echo '<p>Error: ' . $errorMessage . '</p>';
@@ -44,18 +44,18 @@ if (!$row) {
                 ?>
             <form action="editarLocalizacao.php" method="POST" class="form-horizontal">
                 <input type="hidden" name="id" value="<?php echo $row['IDlocalizacao']; ?>" />
-                <!--location id. auto incremented in database. cannot be updated from website-->
+                <!--id localizacao. auto incrementado no banco de dados. nao pode ser atualizado pelo website-->
                 <div class="form-group">
                     <label for="Name" class="col-md-2 control-label">Name</label>
                     <!--label-->
                     <div class="col-md-5">
                         <input type="text" class="form-control" id="Name" name="Nome"
                             value="<?php echo $row['Nome']; ?>" />
-                        <!--input with current data from database-->
+                        <!--entrada com os dados atuais para o banco-->
                     </div>
                     <div class="col-md-4">
                         <span id="LNameError" class="error"></span>
-                        <!--error message for invalid input-->
+                        <!--mensagem de erro para entrada invalida-->
                     </div>
                 </div>
                 <div class="form-group">
@@ -64,11 +64,11 @@ if (!$row) {
                     <div class="col-md-5">
                         <input type="text" class="form-control" id="Address" name="Endereco"
                             value="<?php echo $row['Endereco']; ?>" />
-                        <!--input with current data from database-->
+                        <!--entrada com os dados atuais para o banco-->
                     </div>
                     <div class="col-md-4">
                         <span id="LAddressError" class="error"></span>
-                        <!--error message for invalid input-->
+                        <!--mensagem de erro para entrada invalida-->
                     </div>
                 </div>
                 <div class="form-group">
@@ -77,11 +77,11 @@ if (!$row) {
                     <div class="col-md-5">
                         <input type="text" class="form-control" id="ManagerFName" name="NomeOrganizador"
                             value="<?php echo $row['NomeOrganizador']; ?>" />
-                        <!--input with current data from database-->
+                        <!--entrada com os dados atuais para o banco-->
                     </div>
                     <div class="col-md-4">
                         <span id="mNameError" class="error"></span>
-                        <!--error message for invalid input-->
+                        <!--mensagem de erro para entrada invalida-->
                     </div>
                 </div>
                 <div class="form-group">
@@ -90,11 +90,11 @@ if (!$row) {
                     <div class="col-md-5">
                         <input type="text" class="form-control" id="ManagerLName" name="SobrenomeOrganizador"
                             value="<?php echo $row['SobrenomeOrganizador']; ?>" />
-                        <!--input with current data from database-->
+                        <!--entrada com os dados atuais para o banco-->
                     </div>
                     <div class="col-md-4">
                         <span id="mNameError" class="error"></span>
-                        <!--error message for invalid input-->
+                        <!--mensagem de erro para entrada invalida-->
                     </div>
                 </div>
                 <div class="form-group">
@@ -103,11 +103,11 @@ if (!$row) {
                     <div class="col-md-5">
                         <input type="text" class="form-control" id="ManagerEmail" name="EmailOrganizador"
                             value="<?php echo $row['EmailOrganizador']; ?>" />
-                        <!--input with current data from database-->
+                        <!--entrada com os dados atuais para o banco-->
                     </div>
                     <div class="col-md-4">
                         <span id="mEmailError" class="error"></span>
-                        <!--error message for invalid input-->
+                        <!--mensagem de erro para entrada invalida-->
                     </div>
                 </div>
                 <div class="form-group">
@@ -116,11 +116,11 @@ if (!$row) {
                     <div class="col-md-5">
                         <input type="number" class="form-control" id="ManagerNumber" name="ContatoOrganizador"
                             value="<?php echo $row['ContatoOrganizador']; ?>" />
-                        <!--input with current data from database-->
+                        <!--entrada com os dados atuais para o banco-->
                     </div>
                     <div class="col-md-4">
                         <span id="mNumError" class="error"></span>
-                        <!--error message for invalid input-->
+                        <!--mensagem de erro para entrada invalida-->
                     </div>
                 </div>
                 <div class="form-group">
@@ -129,24 +129,24 @@ if (!$row) {
                     <div class="col-md-5">
                         <input type="number" class="form-control" id="MaxCapacity" name="CapacidadeMaxima"
                             value="<?php echo $row['CapacidadeMaxima']; ?>" />
-                        <!--input with current data from database-->
+                        <!--entrada com os dados atuais para o banco-->
                     </div>
                     <div class="col-md-4">
                         <span id="capError" class="error"></span>
-                        <!--error message for invalid input-->
+                        <!--mensagem de erro para entrada invalida-->
                     </div>
                 </div>
                 <button type="submit" class="btn btn-default pull-right" name="editarLocalizacao">Update <span
                         class="glyphicon glyphicon-floppy-disk"></span></button>
-                <!--submit button-->
+                <!--botao submit-->
                 <a class="btn btn-default" href="viewlocations.php"><span
                         class="glyphicon glyphicon-circle-arrow-left"></span> Back</a>
-                <!--return/back button-->
+                <!--retorno/botao voltar-->
             </form>
         </div>
     </div>
     <?php require 'utils/rodape.php'; ?>
-    <!--footer content. file found in utils folder-->
+    <!--conteudo cabecalho. arquivo encontrado na pasta utils-->
 </body>
 
 </html>

@@ -8,7 +8,7 @@ require_once 'classes/TabelaLocalizacao.php';
 require_once 'classes/Conexao.php';
 
 
-$connection = Conexao::getInstance();
+$connection = Conexao::getInstancia();
 $gateway = new TabelaEvento($connection);
 
 $statement = $gateway->getEventos();
@@ -47,6 +47,7 @@ $user = $_SESSION['user'];
                         <th>ID do Evento</th>
                         <th>Título</th>
                         <th>Descrição</th>
+                        <th>Tipo de Evento</th>
                         <th>Data de Início</th>
                         <th>Data de Fim</th>
                         <th>Custo</th>
@@ -62,7 +63,8 @@ $user = $_SESSION['user'];
                             echo '<tr>';
                             echo '<td>' . $row['IDevento'] . '</td>';
                             echo '<td>' . $row['Titulo'] . '</td>';
-                            echo '<td>' . $row['Descricao'] . '</td>';                    
+                            echo '<td>' . $row['Descricao'] . '</td>'; 
+                            echo '<td>' . $row['TipoEvento'] . '</td>';                    
                             echo '<td>' . $row['DataInicio'] . '</td>';
                             echo '<td>' . $row['DataFim'] . '</td>';
                             echo '<td>' . $row['Custo'] . '</td>';
@@ -82,7 +84,7 @@ $user = $_SESSION['user'];
             </table>
 
             <a class="btn btn-default" href="criarEventoForm.php">Criar Evento</a>
-            <!--register button-->
+            <!--botao registrar-->
         </div>
     </div>
 
