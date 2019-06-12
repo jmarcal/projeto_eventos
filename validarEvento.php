@@ -1,50 +1,57 @@
 <?php
 
 function validarEvento($input_method, &$formdata, &$errors) {
-    $formdata['Title'] = filter_input($input_method, "Title", FILTER_SANITIZE_STRING);
-    $formdata['Description'] = filter_input($input_method, "Description", FILTER_SANITIZE_STRING);
-    $formdata['StartDate'] = filter_input($input_method, "StartDate", FILTER_SANITIZE_STRING);
-    $formdata['EndDate'] = filter_input($input_method, "EndDate", FILTER_SANITIZE_STRING);
-    $formdata['Cost'] = filter_input($input_method, "Cost", FILTER_SANITIZE_NUMBER_INT);
-    $formdata['LocID'] = filter_input($input_method, "LocID", FILTER_SANITIZE_NUMBER_INT);
+    $formdata['Titulo'] = filter_input($input_method, "Titulo", FILTER_SANITIZE_STRING);
+    $formdata['Descricao'] = filter_input($input_method, "Descricao", FILTER_SANITIZE_STRING);
+    $formdata['TipoEvento'] = filter_input($input_method, "TipoEvento", FILTER_SANITIZE_STRING);
+    $formdata['DataInicio'] = filter_input($input_method, "DataInicio", FILTER_SANITIZE_STRING);
+    $formdata['DataFim'] = filter_input($input_method, "DataFim", FILTER_SANITIZE_STRING);
+    $formdata['Custo'] = filter_input($input_method, "Custo", FILTER_SANITIZE_NUMBER_INT);
+    $formdata['IDloc'] = filter_input($input_method, "IDloc", FILTER_SANITIZE_NUMBER_INT);
 
-    if ($formdata['Title'] === NULL ||
-                    $formdata['Title'] === FALSE ||
-                    $formdata['Title'] === "")
+    if ($formdata['Titulo'] === NULL ||
+                    $formdata['Titulo'] === FALSE ||
+                    $formdata['Titulo'] === "")
     {
         $errors['Title'] = "Title required";
     }
     
-    if ($formdata['Description'] === NULL ||
-                    $formdata['Description'] === FALSE ||
-                    $formdata['Description'] === "")
+    if ($formdata['Descricao'] === NULL ||
+                    $formdata['Descricao'] === FALSE ||
+                    $formdata['Descricao'] === "")
     {
         $errors['Description'] = "Description required";
     }   
+     if ($formdata['TipoEvento'] === NULL ||
+                     $formdata['TipoEvento'] === FALSE ||
+                     $formdata['TipoEvento'] === "")
+     {
+         $errors['TipoEvento'] = "Escolha tipo de evento";
+     }   
     
-    if ($formdata['StartDate'] === NULL ||
-                    $formdata['StartDate'] === FALSE ||
-                    $formdata['StartDate'] === "")
+    if ($formdata['DataInicio'] === NULL ||
+                    $formdata['DataInicio'] === FALSE ||
+                    $formdata['DataInicio'] === "")
     {
         $errors['StartDate'] = "Start Date  required";
     }
     
-    if ($formdata['EndDate'] === NULL ||
-                    $formdata['EndDate'] === FALSE ||
-                    $formdata['EndDate'] === "")
+    if ($formdata['DataFim'] === NULL ||
+                    $formdata['DataFim'] === FALSE ||
+                    $formdata['DataFim'] === "")
     {
         $errors['EndDate'] = "End Date required";
     }
     
-    if ($formdata['Cost'] === ""){
-        $capacity = intval($formdata['Cost']);
+    if ($formdata['Custo'] === ""){
+        $capacity = intval($formdata['Custo']);
         if ($capacity < 0 || $capacity > 999999) {
     }
         $errors['Cost'] = "Cost required. Cannot be a negative value";
     }
     
-    if ($formdata['LocID'] === ""){
-        $locID = intval($formdata['LocID']);
+    if ($formdata['IDloc'] === ""){
+        $locID = intval($formdata['IDloc']);
         if ($locID < 0 || $capacity > 999999) {
     }
         $errors['LocID'] = "LocationID required. Cannot be a negative value";

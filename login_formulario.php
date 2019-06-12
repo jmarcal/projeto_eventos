@@ -10,16 +10,16 @@
     }
     </style>
     <?php require 'utils/styles.php'; ?>
-    <!--css links. file found in utils folder-->
+    <!--links css. arquivo encontrado na pasta utils-->
     <?php require 'utils/scripts.php'; ?>
-    <!--js links. file found in utils folder-->
+    <!--js links. arquivo encontrado na pasta utils-->
 </head>
 
 <body>
     <?php require 'utils/cabecalho.php'; ?>
-    <!--header content. file found in utils folder-->
+    <!--conteudo header. arquivo encontrado na pasta utils-->
     <div class="content">
-        <!--body content holder-->
+        <!--conteudo body-->
         <div class="container">
             <div class="col-md-6 col-md-offset-3">
                 <?php
@@ -29,34 +29,31 @@
                 <form action="login.php" method="POST">
                     <!--form-->
                     <div class="form-group">
-                        <!--username field-->
+                        <!--campo nome de usuario-->
                         <label for="username">Username: </label>
                         <input type="text" name="username" class="form-control"
                             value="<?php if (isset($formdata['username'])) echo $formdata['username']; ?>" />
                         <span class="error">
-                            <!--error message for invalid input-->
+                            <!--mensagem de erro para entrada invalida-->
                             <?php if (isset($errors['username'])) echo $errors['username']; ?>
                         </span>
                     </div>
                     <div class="form-group">
-                        <!--password field-->
+                        <!--campo senha-->
                         <label for="password">Password: </label>
                         <input type="password" name="password" class="form-control" value="" />
                         <span class="error">
-                            <!--error message for invalid input-->
+                            <!--mensagem de erro para entrada invalida-->
                             <?php if (isset($errors['password'])) echo $errors['password']; ?>
                         </span>
                     </div>
                     <button type="submit" class="btn btn-default">Login</button>
                 </form>
             </div>
-            <!--col md 6 div-->
         </div>
-        <!--container div-->
     </div>
-    <!--content div-->
     <?php require 'utils/rodape.php'; ?>
-    <!--footer content. file found in utils folder-->
+    <!--conteudo rodape. arquivo encontrado na pasta utils-->
 </body>
 
 </html>

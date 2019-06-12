@@ -9,7 +9,7 @@ class TabelaLocalizacao {
         $this->connect = $c;
     }
     
-    // execute a query to get all locations
+    // executa uma query para pegar todas as localizacoes
     public function getLocations() {
         $sqlQuery = "SELECT * FROM localizacoes";
         
@@ -23,7 +23,7 @@ class TabelaLocalizacao {
         return $statement;
     }
     
-    // execute a query to get a location with the specified id
+    //executa uma query para pegar todas as localizacoes com o id especificado
     public function getLocationsById($id) {
         $sqlQuery = "SELECT * FROM localizacoes WHERE IDlocalizacao = :id";
         
@@ -41,7 +41,7 @@ class TabelaLocalizacao {
         return $statement;
     }
     
-    //execute a insert sql statement that inserts data taken from user to a database.
+    //executa uma declaracao insert que insere dados pegos do usuario
     public function insert($p) {
         $sql = "INSERT INTO Localizacoes(Nome, Endereco, NomeOrganizador, SobrenomeOrganizador, EmailOrganizador, ContatoOrganizador, CapacidadeMaxima) " .
                 "VALUES (:Nome, :Endereco, :NomeOrganizador, :SobrenomeOrganizador, :EmailOrganizador, :ContatoOrganizador, :CapacidadeMaxima)";

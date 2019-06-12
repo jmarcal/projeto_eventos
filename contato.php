@@ -5,21 +5,20 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Sistema de Gerenciamento de Eventos</title>
     <?php require 'utils/styles.php'; ?>
-    <!--css links. file found in utils folder-->
+    <!--links css. arquivo encontrado na pasta utils-->
     <?php require 'utils/scripts.php'; ?>
-    <!--js links. file found in utils folder-->
+    <!--links js. arquivo encontrado na pasta utils-->
 </head>
 
 <body>
     <?php require 'utils/cabecalho.php'; ?>
-    <!--header content. file found in utils folder-->
+    <!--conteudo cabecalho. arquivo encontrado na pasta utils-->
     <div class="content">
-        <!--body content holder-->
+        <!--conteudo body-->
         <div class="container">
             <div class="col-md-12">
-                <!--body content title holder with 12 grid columns-->
                 <h1>Entre em contato</h1>
-                <!--body content title-->
+                <!--conteudo titulo body-->
             </div>
         </div>
 
@@ -56,9 +55,9 @@
 
 
     </div>
-    <!--body content div-->
+    <!--conteudo body div-->
     <?php require 'utils/rodape.php'; ?>
-    <!--footer content. file found in utils folder-->
+    <!--conteudo rodape. arquivo encontrado na pasta utils-->
 </body>
 
 </html>

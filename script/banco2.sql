@@ -27,6 +27,7 @@ CREATE TABLE `eventos` (
   `IDevento` int(11) NOT NULL,
   `Titulo` varchar(255) NOT NULL,
   `Descricao` varchar(255) NOT NULL,
+  `TipoEvento` varchar(255) NOT NULL,
   `DataInicio` varchar(255) NOT NULL,
   `DataFim` varchar(255) NOT NULL,
   `Custo` int(11) NOT NULL,

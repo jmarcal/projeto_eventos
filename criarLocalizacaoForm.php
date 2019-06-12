@@ -21,18 +21,18 @@ if (!isset($errors)) {
     }
     </style>
     <?php require 'utils/styles.php'; ?>
-    <!--css links. file found in utils folder-->
+    <!-- links css. arquivo encontrado na pasta utils-->
     <?php require 'utils/scripts.php'; ?>
-    <!--js links. file found in utils folder-->
+    <!--links js. arquivo encontrado na pasta utils-->
 </head>
 
 <body>
-    <?php require 'utils/cabecalho.php'; ?>
-    <!--header content. file found in utils folder-->
+    <?php require 'utils/cabecalh.php'; ?>
+    <!--conteudo cabecalho. arquivo encontrado na pasta utils-->
     <div class="content">
         <div class="container">
             <h1>Criar Local</h1>
-            <!--form title-->
+            <!--titulo formulario-->
             <?php 
                 if (isset($errorMessage)) {
                     echo '<p>Error: ' . $errorMessage . '</p>';
@@ -44,11 +44,11 @@ if (!isset($errors)) {
                     <div class="col-md-5">
                         <input type="text" class="form-control" id="Name" name="Name"
                             value="<?php echoValue($formdata, "Name")?>" />
-                        <!--input-->
+                        <!--entrada-->
                     </div>
                     <div class="col-md-4">
                         <span id="LNameError" class="error">
-                            <!--error message for invalid input-->
+                            <!--mensagem de erro para entrada invalida-->
                             <?php echoValue($errors, 'Name');?>
                         </span>
                     </div>
@@ -58,11 +58,11 @@ if (!isset($errors)) {
                     <div class="col-md-5">
                         <input type="text" class="form-control" id="Address" name="Address"
                             value="<?php echoValue($formdata, "Address")?>" />
-                        <!--input-->
+                        <!--entrada-->
                     </div>
                     <div class="col-md-4">
                         <span id="LAddressError" class="error">
-                            <!--error message for invalid input-->
+                            <!--mensagem de erro para entrada invalida-->
                             <?php echoValue($errors, 'Address');?>
                         </span>
                     </div>
@@ -72,11 +72,11 @@ if (!isset($errors)) {
                     <div class="col-md-5">
                         <input type="text" class="form-control" id="managerFName" name="managerFName"
                             value="<?php echoValue($formdata, "managerFName")?>" />
-                        <!--input-->
+                        <!--entrada-->
                     </div>
                     <div class="col-md-4">
                         <span id="mNameError" class="error">
-                            <!--error message for invalid input-->
+                            <!--mensagem de erro para entrada invalida-->
                             <?php echoValue($errors, 'managerFName');?>
                         </span>
                     </div>
@@ -86,11 +86,11 @@ if (!isset($errors)) {
                     <div class="col-md-5">
                         <input type="text" class="form-control" id="managerName" name="managerLName"
                             value="<?php echoValue($formdata, "managerLName")?>" />
-                        <!--input-->
+                        <!--entrada-->
                     </div>
                     <div class="col-md-4">
                         <span id="mNameError" class="error">
-                            <!--error message for invalid input-->
+                            <!--mensagem de erro para entrada invalida-->
                             <?php echoValue($errors, 'managerLName');?>
                         </span>
                     </div>
@@ -100,11 +100,11 @@ if (!isset($errors)) {
                     <div class="col-md-5">
                         <input type="email" class="form-control" id="managerEmail" name="managerEmail"
                             value="<?php echoValue($formdata, "managerEmail")?>" />
-                        <!--input-->
+                        <!--entrada-->
                     </div>
                     <div class="col-md-4">
                         <span id="mEmailError" class="error">
-                            <!--error message for invalid input-->
+                            <!--mensagem de erro para entrada invalida-->
                             <?php echoValue($errors, 'managerEmail');?>
                         </span>
                     </div>
@@ -114,11 +114,11 @@ if (!isset($errors)) {
                     <div class="col-md-5">
                         <input type="number" class="form-control" id="managerNumber" name="managerNumber"
                             value="<?php echoValue($formdata, "managerNumber")?>" />
-                        <!--input-->
+                        <!--entrada-->
                     </div>
                     <div class="col-md-4">
                         <span id="mNumError" class="error">
-                            <!--error message for invalid input-->
+                            <!--mensagem de erro para entrada invalida-->
                             <?php echoValue($errors, 'managerNumber');?>
                         </span>
                     </div>
@@ -128,20 +128,20 @@ if (!isset($errors)) {
                     <div class="col-md-5">
                         <input type="number" class="form-control" id="locationMaxCap" name="maxCap"
                             value="<?php echoValue($formdata, "maxCap")?>" />
-                        <!--input-->
+                        <!--entrada-->
                     </div>
                     <div class="col-md-4">
                         <span id="capError" class="error">
-                            <!--error message for invalid input-->
+                            <!--mensagem de erro para entrada invalida-->
                             <?php echoValue($errors, 'maxCap');?>
                         </span>
                     </div>
                 </div>
 
-                <!--codes below has no connection with the database.-->
+                <!--codigo abaixo nao tem conexao com o banco de dados-->
                 <div class="form-group">
                     <label class="col-md-2 control-label">Tipo de Local</label>
-                    <!--radio buttons with multiple options-->
+                    <!--botao radio com multiplas opcoes-->
                     <div class="col-md-5">
                         <input type="radio" name="lType" value="indoor"
                             <?php echoChecked($formdata, "lType", "indoor"); ?>>Interno <br>
@@ -206,11 +206,11 @@ if (!isset($errors)) {
             </form>
             <a class="btn btn-default" href="verLocalizacoes.php"><span
                     class="glyphicon glyphicon-circle-arrow-left"></span> Voltar</a>
-            <!--return/back button-->
+            <!--retorno/botao voltar-->
         </div>
     </div>
     <?php require 'utils/rodape.php'; ?>
-    <!--footer content. file found in utils folder-->
+    <!--conteudo rodape. arquivo encontrado na pasta utils-->
 </body>
 
 </html>

@@ -40,11 +40,12 @@ if (!$row) {
                 ?>
             <table class="table table-hover">
                 <thead>
-                    <!--table labels-->
+                    <!--labels tabelas-->
                     <tr>
                         <th>ID do Evento</th>
                         <th>Título</th>
                         <th>Descrição</th>
+                        <th>Tipo de Evento</th>
                         <th>Data de Início</th>
                         <th>Data de Fim</th>
                         <th>Custo</th>
@@ -53,12 +54,13 @@ if (!$row) {
                     </tr>
                 </thead>
                 <tbody>
-                    <!--table contents, pulled from database-->
+                    <!--conteudo tabelas, pega do db-->
                     <?php
                         echo '<tr>';
                         echo '<td>' . $row['IDevento'] . '</td>';
                         echo '<td>' . $row['Titulo'] . '</td>';
-                        echo '<td>' . $row['Descricao'] . '</td>';                    
+                        echo '<td>' . $row['Descricao'] . '</td>'; 
+                        echo '<td>' . $row['TipoEvento'] . '</td>';                    
                         echo '<td>' . $row['DataInicio'] . '</td>';
                         echo '<td>' . $row['DataFim'] . '</td>';
                         echo '<td>' . $row['Custo'] . '</td>';

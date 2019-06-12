@@ -5,7 +5,7 @@
         <div class="row">
             <section>
                 <div class="footerContent col-md-4">
-                    <!--left content-->
+                    <!--conteudo da esquerda-->
                     <p class="footerContent1">
                         <strong>UP</strong>
                         <span class="small footerSubtext">Eventos</span>
@@ -20,7 +20,7 @@
             </section>
             <section>
                 <div class="footcontent col-md-4">
-                    <!--middle content-->
+                    <!--conteudo do meio-->
                     Website desenvolvido com as tecnologias:<br>
                     HTML5, CSS3, Javascript e PHP<br>
 
@@ -28,7 +28,7 @@
             </section>
             <section>
                 <div class="footcontent col-md-4">
-                    <!--right content-->
+                    <!--conteudo da direita-->
                     Siga nos:<br>
                     <img src="images/facebook.png">
                     <img src="images/twitter.png">

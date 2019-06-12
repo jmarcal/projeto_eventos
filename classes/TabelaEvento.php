@@ -64,13 +64,14 @@ class TabelaEvento {
     }
     
     public function insert($p) {
-        $sql = "INSERT INTO eventos(Titulo, Descricao, DataInicio, DataFim, Custo, IDlocalizacao) " .
-                "VALUES (:Titulo, :Descricao, :DataInicio, :DataFim, :Custo, :IDlocalizacao)";
+        $sql = "INSERT INTO eventos(Titulo, Descricao, TipoEvento, DataInicio, DataFim, Custo, IDlocalizacao) " .
+                "VALUES (:Titulo, :Descricao, :TipoEvento, :DataInicio, :DataFim, :Custo, :IDlocalizacao)";
         
         $statement = $this->connect->prepare($sql);
         $params = array(
             "Titulo"           => $p->getTitulo(),
-            "Descricao"     => $p->getDescricao(),            
+            "Descricao"     => $p->getDescricao(),
+            "TipoEvento"     => $p->getTipoEvento(),            
             "DataInicio"       => $p->getDataInicio(),
             "DataFim"         => $p->getDataFim(),
             "Custo"            => $p->getCusto(),
@@ -86,7 +87,8 @@ class TabelaEvento {
         
         
         if (!$status) {
-            die("nao foi possivel realizar acao");
+            die("nao foi possivel realizar acao aff 
+            ");
         }
         
         $id = $this->connect->LastInsertID();

@@ -1,19 +1,19 @@
 <header class="bgImage">
-    <nav class="navbar">
+    <nav class="navbar" style="background:rgba(0,0,0,.3);">
         <div class="container">
             <div class="navbar-header">
-                <!--website name/title-->
+                <!--Nome/titulo website-->
                 <?php 
                 require_once 'utils/funcoes.php';
-                echo '<a href = "index.php" class = "navbar-brand">
-                    BrEvents
+                echo '<a href = "index.php" style="margin-top:-40px;" class = "navbar-brand">
+                    <h1>BrEvents</h1>
                 </a> ';
                 ?>
             </div>
             <ul class="nav navbar-nav navbar-right">
-                <!--navigation-->
+                <!--navegacao-->
                 <?php 
-                //links to database contents. *if logged in
+                //links para conteudos do db. *caso estiver logado
                 if(is_logged_in()){
                     require_once 'utils/funcoes.php';
                     echo '<li><a href = "index.php">Home</a></li>';
@@ -22,7 +22,7 @@
                     echo '<li><a href = "contato.php">Entre em contato</a></li>';
                     echo '<li class="btnlogout"><a class = "btn btn-default navbar-btn" href = "logout.php">Sair <span class = "glyphicon glyphicon-log-out"></span></a></li>';
                 }  
-                //links non database contents. *if logged out
+                //link conteudos fora db. *se estiver deslogado
                 else {
                     echo '<li><a href = "index.php">Home</a></li>';
                     echo '<li><a href = "eventos2.php">Eventos</a></li>';
@@ -33,45 +33,45 @@
                 ?>
 
                 <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                    <!--modal for login-->
+                    <!--modal para login-->
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <!--modal header-->
+                                <!--modal cabecalho-->
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                                         aria-hidden="true">&times;</span></button>
                                 <h4 class="modal-title" id="myModalLabel">Entrar</h4>
-                                <!--modal title-->
+                                <!--modal titulo-->
                             </div>
                             <div class="row">
                                 <div class="modal-body">
-                                    <!--modal content-->
+                                    <!--modal conteudo-->
                                     <div class="col-md-6 col-md-offset-3">
                                         <form action="login.php" method="POST">
                                             <div class="form-group">
-                                                <!--username-->
+                                                <!--nome de usuario-->
                                                 <label for="username">Nome de Usuário:</label>
                                                 <input type="text" name="username" class="form-control"
                                                     value="<?php if (isset($formdata['username'])) echo $formdata['username']; ?>" />
                                                 <span class="error">
-                                                    <!--error message on failed input-->
+                                                    <!--mensagem de erro para entrada invalida-->
                                                     <?php if (isset($errors['username'])) echo $errors['username']; ?>
                                                 </span>
                                             </div>
                                             <div class="form-group">
-                                                <!--password-->
+                                                <!--senha-->
                                                 <label for="password">Senha:</label>
                                                 <input type="password" name="password" class="form-control" value="" />
                                                 <span class="error">
-                                                    <!--error message on failed input-->
+                                                    <!--mensagem de erro para entrada invalida-->
                                                     <?php if (isset($errors['password'])) echo $errors['password']; ?>
                                                 </span>
                                             </div>
                                             <button type="submit" class="btn btn-default loginbtn">Login</button>
-                                            <!--login button-->
+                                            <!--botao login-->
                                             <a class="btn btn-default navbar-btn rgsterbtn"
                                                 href="registro_formulario.php">Cadastrar</a>
-                                            <!--register button-->
+                                            <!--botao registrar-->
                                         </form>
                                     </div>
                                 </div>
@@ -79,40 +79,33 @@
                             </div>
                             <!--row div-->
                             <div class="modal-footer">
-                                <!--modal footer-->
+                                <!--modal rodape-->
                                 <button type="button" class="btn btn-default closebtn"
                                     data-dismiss="modal">Sair</button>
                                 <p>
-                                    <!--close button-->
+                                    <!--botao fechar-->
                             </div>
-                            <!--modal footer div-->
+                            <!--modal rodape div-->
                         </div>
-                        <!--modal content div-->
+                        <!--modal conteudo div-->
                     </div>
-                    <!--modal dialog div-->
+                    <!--modal dialogo div-->
                 </div>
                 <!--modal div-->
             </ul>
         </div>
         <!--container div-->
     </nav>
-    <div class="col-md-12">
-        <div class="container">
-            <div class="jumbotron">
-                <!--jumbotron-->
-                <h1>Br Events</h1>
-                <!--jumbotron heading-->
-                <p>
-                    <!--jumbotron content-->
-                    Se você está querendo reservar um coquetel, reunião pós-trabalho, função comemorativa,
-                    conferência, reunião de negócios , casamento ou jantares privados, nossa equipe dedicada ao Urban
-                    Events pode criar um pacote que vai encontrar todas as suas necessidades.
-                </p>
-                <?php
+    <!-- <div class="col-md-12">
+
+        <div class="jumbotron">
+            jumbotron
+            <h1 style="background:rgba(0,0,0,.4);width:100%;">Br Events</h1>
+            <?php
                 date_default_timezone_set('America/Sao_paulo');
                 ?>
-                <p id="dateAndTime"></p>
-            </div>
+             <p style="text-align:rigth;" id="dateAndTime"></p> 
+
         </div>
-    </div>
+    </div> -->
 </header>
