@@ -7,9 +7,9 @@ class Conexao {
         if (Conexao::$connect === NULL) {
             // conexao ao banco
             $host = "localhost";
-			$bd = "upeventos2";
-			$nusuario = "root";
-            $susuario = "admin1234";
+			$bd = " NOMEBANCO ";
+			$nusuario = "NOMEUSUARIO";
+            $susuario = "SENHAUSUARIO";
             
 
             $dsn = "mysql:host=" . $host . ";dbname=" . $bd;

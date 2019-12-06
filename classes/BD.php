@@ -2,9 +2,9 @@
 class BD {
     // configuracao banco
     private static $host = "localhost";
-    private static $bd = "upeventos2";
-    private static $nusuario = "root";
-    private static $susuario = "admin1234";
+    private static $bd = "NOMEBANCO";
+    private static $nusuario = "NOMEUSUARIO";
+    private static $susuario = "SENHAUSUARIO";
     
     public static function getConnection() {
         $dsn = 'mysql:host=' . BD::$host . ';dbname=' . BD::$bd;

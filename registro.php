@@ -22,20 +22,20 @@ try {
     // lanca uma excessao se houver 
     // campos vazios
     if (empty($formdata['username'])) {
-        $errors['username'] = "Username required";
+        $errors['username'] = "Necessario Nome de Usuário";
     }
 
     if (empty($_POST['password'])) {
-        $errors['password'] = "Password required";
+        $errors['password'] = "Necessário Senha";
     }
     if (empty($formdata['cpassword'])) {
-        $errors['cpassword'] = "Confirm password required";
+        $errors['cpassword'] = "Necessario confirmar senha";
     }
     // se os campos de senha nao baterem
     // lanca uma excessao
     if (!empty($formdata['password']) && !empty($formdata['cpassword']) 
             && $formdata['password'] != $formdata['cpassword']) {
-        $errors['password'] = "Passwords must match";
+        $errors['password'] = "Senhas se diferem";
     }
 
     if (empty($errors)) {
@@ -55,12 +55,12 @@ try {
         // o usuario ja foi registrado - se ja foi entao
         // lanca uma excessao
         if ($user != null) {
-            $errors['username'] = "Username already registered";
+            $errors['username'] = "Usuário já cadastrado";
         }
     }
     
     if (!empty($errors)) {
-        throw new Exception("There were errors. Please fix them.");
+        throw new Exception("Há erros. Por favor contate o administrador.");
     }
     
     $user = new Usuario(null, $username, $password, "user");
